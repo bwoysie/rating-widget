@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(1, 134, 134);
+  display: flex;
+  /* flex is used here and affects al the children of the body and use justify to center right to left*/
+  justify-content: center;
+  /* and to center top to bottom set the height first  */
+  height: 100vh;
+  align-items: center;
+  
+}
+
+.widget-container {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(99,99,99);
+  font-family: Arial, Helvetica, sans-serif ;
+  display: flex;
+  /* flex does left to right  so use collum for top tp bottom*/
+  flex-direction: column;
+  align-items: center;
+  /* justify again for toop to bottom */
+  justify-content: center;
+}
+
+.face {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgb(251,214,133);
+}
+
+.eye-container {
+  position: relative;
+  /* user relative in rregards to the face and then left and bottom */
+  left: 32px;
+  bottom: -35px;
+  display: flex;
+  /* flex for side by side */
+  width: 85px;
+  justify-content: space-between;
+}
+
+.eye {
+  background-color: rgb(32,24,78);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.happy-mouth {
+  width: 75px;
+  height: 37px;
+  background-color: rgb(32,24,78);
+  border-radius: 10px 10px 150px 150px;
+}
+
+.mouth-container {
+  position: relative;
+  width: 75px;
+  left: 35px;
+  top: 50px;
+}
