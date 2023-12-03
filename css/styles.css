@@ -52,6 +52,13 @@ body {
   border-radius: 15px;
 }
 
+.mouth-container {
+  position: relative;
+  width: 75px;
+  left: 35px;
+  top: 55px;
+}
+
 .happy-mouth {
   width: 75px;
   height: 37px;
@@ -59,9 +66,49 @@ body {
   border-radius: 10px 10px 150px 150px;
 }
 
-.mouth-container {
+
+.indifferent-mouth {
   position: relative;
+  top: 5px;
   width: 75px;
-  left: 35px;
-  top: 50px;
+  height: 10px;
+  background-color: rgb(32,24,78);
+  border-radius: 10px;
+}
+
+
+.sad-mouth {
+  width: 75px;
+  height: 37px;
+  background-color: rgb(32,24,78);
+  border-radius: 150px 150px 10px 10px;
+}
+
+.ratings-container {
+ display: flex;
+ width: 300px;
+ justify-content: space-between;
+ margin: 10px 0 ;
+}
+
+
+.rating-container div {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+/* instead of doing each induvidual attribute for each div in the rationgs container we can use the parent for all teh same attributes */
+#bad {
+  
+  background-color: rgb(216,71,71);
+}
+
+#ok {
+
+  background-color: rgb(79,186,194);
+}
+
+#good {
+
+  background-color: rgb(79,184, 89);
 }
